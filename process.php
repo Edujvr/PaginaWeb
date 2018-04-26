@@ -11,7 +11,7 @@ try {
         curl_setopt($ch, CURLOPT_URL,
             "https://api.api.ai/v1/query?v=20150910&query=".$query."&lang=en&sessionId=".$sessionid);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json',
-            'Authorization: Bearer '.trim($configs['cb4e2bebe12b47a393a13580be7ac2f1'])));
+            'Authorization: Bearer '.trim($configs['CLIENT_ACCESS_TOKEN'])));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $output = curl_exec($ch);
         $dec = json_decode($output);
