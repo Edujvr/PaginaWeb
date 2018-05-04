@@ -17,7 +17,7 @@
 </head>
 <body class="fontStyle">
 
-<div class="topstrip" id="topstrip">Desarrollado por <a href="http://pichinchanetbp:8080/" style="color:#d3d3d3">
+<div class="topstrip" id="topstrip">Desarrollado por Tecnología <br/><a href="http://pichinchanetbp:8080/" style="color:#d3d3d3">
         Banco Pichincha</a>&nbsp;&nbsp;&nbsp;</div>
 <div class="topbar container-fluid" id="chat-text" style="background-color: #fafafa">
 </div>
