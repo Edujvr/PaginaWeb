@@ -16,13 +16,6 @@
     </script>
 </head>
 <body class="fontStyle">
-    <script language="JavaScript"> 
-        if(window.screen.availWidth == 1280)window.parent.document.body.style.zoom="120%" 
-        if(window.screen.availWidth == 1152)window.parent.document.body.style.zoom="108%" 
-        if(window.screen.availWidth == 1024)window.parent.document.body.style.zoom="96%" 
-        if(window.screen.availWidth == 800)window.parent.document.body.style.zoom="75%"; 
-        if(window.screen.availWidth == 640)window.parent.document.body.style.zoom="60%" 
-    </script>
 <div class="topstrip" id="topstrip">Desarrollado por Tecnología <br/><a href="http://pichinchanetbp:8080/" style="color:#d3d3d3">
         Banco Pichincha</a>&nbsp;&nbsp;&nbsp;</div>
 <div class="topbar container-fluid" id="chat-text" style="background-color: #fafafa">
