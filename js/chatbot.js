@@ -64,7 +64,7 @@ $(function () {
                     $(divMessage).append(btnStartOver);
                     $('#chat-text').append(divMessage);
                     $(btnStartOver).click(function(){
-                        var textToSubmit = 'start over';
+                        var textToSubmit = 'Comenzar de nuevo';
                         $("#message").val(textToSubmit);
                         $( "form" ).trigger( "submit" );
                         $(divMessage).addClass('disabledbutton')
