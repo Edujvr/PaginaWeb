@@ -54,10 +54,10 @@ $(function () {
                     });
                     var btnStartOver = $('<button/>',{
                         class:'btn btn-sm btn-danger',
-                        text:'Start Over'
+                        text:'Comenzar de nuevo'
                     });
                     var textStartOver = $('<h3/>',{
-                        html:'End of Conversation'
+                        html:'Fin de la conversación'
                     });
                     $(divMessage).append(textStartOver);
                     $(btnStartOver).css('margin-left','10px');
