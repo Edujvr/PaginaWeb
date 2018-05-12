@@ -1,7 +1,7 @@
 $(function () {
 
     window.initialMessageDisplayed = false;
-    $(document).mouseenter(function(){
+     $(document).mouseenter(function(){
         if(!window.initialMessageDisplayed){
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
@@ -15,6 +15,7 @@ $(function () {
             window.initialMessageDisplayed = true;
         }
     });
+    
     var guid = ($("#sessionId").text()).trim();
 
 
