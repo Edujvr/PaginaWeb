@@ -15,7 +15,7 @@ $(function () {
                 });
             var answerContainerDiv = jQuery('<div/>',{
                     'class':"float-right",
-                    tabindex:0
+                    tabindex:1
                 });
             var answerdiv = jQuery('<div/>', {
                 html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
