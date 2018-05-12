@@ -19,7 +19,7 @@ $(function () {
                 });
             var answerdiv = jQuery('<div/>', {
                 html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
-                'class': "textResponse2",
+                'class': "textResponse",
                 tabindex:0
             });
             $("#chat-text").append(answerdiv);
