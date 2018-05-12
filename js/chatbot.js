@@ -28,11 +28,6 @@ $(function () {
             var simpleResponseDiv = jQuery('<div/>',{
                 class:'textResponse'
                 });
-            /*var answerdiv = jQuery('<div/>', {
-                html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
-                'class': "textResponse",
-                tabindex:0
-            });*/
             $("#chat-text").append(answerRow);
             $(answerRow).append(answerCol);
             $(answerCol).append(answerContainerDiv);
