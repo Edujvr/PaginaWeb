@@ -7,7 +7,7 @@ $(function () {
         if(!window.initialMessageDisplayed){
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
-            var textFromDefaultResponse = obj.result.speech;
+            var textFromDefaultResponse = obj.result.fulfillment.speech;
             var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
