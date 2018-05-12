@@ -7,6 +7,7 @@ $(function () {
         if(!window.initialMessageDisplayed){
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
+            var textFromDefaultResponse = obj.result.speech;
             var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
@@ -17,14 +18,26 @@ $(function () {
                     'class':"float-right",
                     tabindex:1
                 });
-            var answerdiv = jQuery('<div/>', {
+            var answerContainerDiv = jQuery('<div/>',{
+                    'class':"float-right",
+                    tabindex:0
+                });
+            var simpleResponseRow = jQuery('<div/>',{
+                    class:'row'
+                });
+            var simpleResponseDiv = jQuery('<div/>',{
+                class:'textResponse'
+                });
+            /*var answerdiv = jQuery('<div/>', {
                 html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
                 'class': "textResponse",
                 tabindex:0
-            });
-            $("#chat-text").append(answerdiv);
+            });*/
+            $("#chat-text").append(answerRow);
             $(answerRow).append(answerCol);
             $(answerCol).append(answerContainerDiv);
+            $(simpleResponseRow).append(simpleResponseDiv);
+            $(simpleResponseDiv).html(textFromDefaultResponse);
             $("#message").focus();
             window.initialMessageDisplayed = true;
         }
@@ -50,7 +63,6 @@ $(function () {
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
                 var eoc = responseObj.isEndOfConversation;
-                //Desde aqui se edito
                 var event = responseObj.action;
 
                 var answerRow = jQuery('<div/>',{
