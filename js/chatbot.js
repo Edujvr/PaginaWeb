@@ -38,7 +38,7 @@ $(function () {
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
                 var eoc = responseObj.isEndOfConversation;
-                //Desde aqui se edito
+                /*Desde aqui se edito
                 var event = responseObj.action;
                 var answerdiv = jQuery('<div/>', {
                     //html: responseObj.result.fulfillment.speech.linkify()+'&nbsp;',
@@ -55,7 +55,7 @@ $(function () {
                         $(answerdiv).append(stylingDiv);
                     }
                 }
-                //Hasta aqui se edito
+                //Hasta aqui se edito*/
                 var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
