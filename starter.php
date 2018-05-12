@@ -1,5 +1,5 @@
 <?php
-include('config.php');
+$configs = include('config.php');
 try {
     // create curl resource
     $ch = curl_init();
