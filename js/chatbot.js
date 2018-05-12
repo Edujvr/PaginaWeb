@@ -8,7 +8,7 @@ $(function () {
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
             var answerdiv = jQuery('<div/>', {
-                html: obj.result.fulfillment.speech.linkify()+'<br>',
+                html: obj.result.fulfillment.speech.linkify()+'<br/>',
                 'class': "rounded-div-bot",
                 tabindex:1
             });
