@@ -38,14 +38,14 @@ $(function () {
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
                 var eoc = responseObj.isEndOfConversation;
-                /*Desde aqui se edito
+                //Desde aqui se edito
                 var event = responseObj.action;
                 var answerdiv = jQuery('<div/>', {
                     //html: responseObj.result.fulfillment.speech.linkify()+'&nbsp;',
                     'class': "rounded-div-bot",
                     tabindex:1
                 });
-                $("#chat-text").append(answerdiv);
+                /*$("#chat-text").append(answerdiv);
                 if(event){
                     var stylingDiv = jQuery('<div/>', {
                         html: $("#template").html(),
