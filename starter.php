@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aravind
- * Date: 8/25/17
- * Time: 7:50 PM
- */
+include('config.php');
 try {
     // create curl resource
     $ch = curl_init();
