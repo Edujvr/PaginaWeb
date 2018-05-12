@@ -29,6 +29,7 @@
 </form>
 <?php
 $sessionID = uniqid('', true);
+include('starter.php');
 ?>
 <span style="display: none;" id="sessionId">
         <?php
