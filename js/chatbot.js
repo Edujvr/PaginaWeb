@@ -41,7 +41,7 @@ $(function () {
                 //Desde aqui se edito
                 var event = responseObj.action;
                 var answerdiv = jQuery('<div/>', {
-                    html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
+                    html: responseObj.result.fulfillment.speech.linkify()+'&nbsp;',
                     'class': "rounded-div-bot",
                     tabindex:1
                 });
