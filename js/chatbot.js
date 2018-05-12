@@ -9,8 +9,8 @@ $(function () {
             var event = obj.result.action;
             var answerdiv = jQuery('<div/>', {
                 html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
-                'class': "row",
-                tabindex:0
+                'class': "text-response",
+                tabindex:1
             });
             $("#chat-text").append(answerdiv);
             $("#message").focus();
