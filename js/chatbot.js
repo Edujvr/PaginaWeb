@@ -1,6 +1,8 @@
 $(function () {
 
     window.initialMessageDisplayed = false;
+    
+    
      $(document).mouseenter(function(){
         if(!window.initialMessageDisplayed){
             var obj = JSON.parse($("#dom-target").text());
@@ -16,9 +18,9 @@ $(function () {
         }
     });
     
+    
     var guid = ($("#sessionId").text()).trim();
-
-
+    
     $('form').on('submit', function (e) {
         var query = $("#message").val();
         showUserText();
