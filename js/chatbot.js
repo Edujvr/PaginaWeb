@@ -9,7 +9,7 @@ $(function () {
             var event = obj.result.action;
             var answerdiv = jQuery('<div/>', {
                 html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
-                'class': "rounded-div-bot",
+                'class': "row",
                 tabindex:0
             });
             $("#chat-text").append(answerdiv);
