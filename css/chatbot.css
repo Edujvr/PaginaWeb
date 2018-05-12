@@ -28,7 +28,7 @@
     font-size:14px;
     padding:5px;
     margin:5px;
-    max-width: 300px;
+    max-width: 300
 }
 
 .gaSuggestionChipRow{
@@ -84,17 +84,6 @@
     background-color: lightgray;
     max-width:450px;
 }
-
-.textResponse2{
-    border-radius: 5px;
-    margin: 10px;
-    padding:15px;
-    border:solid 1px black;
-    background-color: lightgray;
-    max-width:450px;
-    float: right;
-}
-
 
 div.textResponse img {
     display: block;
