@@ -10,6 +10,7 @@ $(function () {
             var answerdiv = jQuery('<div/>', {
                 html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
                 'class': "textResponse",
+                'float': right!important;
                 tabindex:1
             });
             $("#chat-text").append(answerdiv);
