@@ -35,7 +35,7 @@ $(function () {
             });*/
             $("#chat-text").append(answerRow);
             $(answerRow).append(answerCol);
-            $(answerCol).append(answerContainerDiv);
+            $(answerCol).append(simpleResponseRow);
             $(simpleResponseRow).append(simpleResponseDiv);
             $(simpleResponseDiv).html(textFromDefaultResponse);
             $("#message").focus();
