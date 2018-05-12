@@ -7,12 +7,24 @@ $(function () {
         if(!window.initialMessageDisplayed){
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
+            var answerRow = jQuery('<div/>',{
+                    'class':'row'
+                });
+            var answerCol = jQuery('<div/>',{
+                    'class':'col'
+                });
+            var answerContainerDiv = jQuery('<div/>',{
+                    'class':"float-right",
+                    tabindex:0
+                });
             var answerdiv = jQuery('<div/>', {
                 html: obj.result.fulfillment.speech.linkify()+'&nbsp;',
                 'class': "textResponse2",
                 tabindex:0
             });
             $("#chat-text").append(answerdiv);
+            $(answerRow).append(answerCol);
+            $(answerCol).append(answerContainerDiv);
             $("#message").focus();
             window.initialMessageDisplayed = true;
         }
@@ -40,22 +52,7 @@ $(function () {
                 var eoc = responseObj.isEndOfConversation;
                 //Desde aqui se edito
                 var event = responseObj.action;
-                var answerdiv = jQuery('<div/>', {
-                    //html: responseObj.result.fulfillment.speech.linkify()+'&nbsp;',
-                    'class': "rounded-div-bot",
-                    tabindex:1
-                });
-                /*$("#chat-text").append(answerdiv);
-                if(event){
-                    var stylingDiv = jQuery('<div/>', {
-                        html: $("#template").html(),
-                        tabindex:1
-                    });
-                    if(event === 'show.customizer'){
-                        $(answerdiv).append(stylingDiv);
-                    }
-                }
-                //Hasta aqui se edito*/
+
                 var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
