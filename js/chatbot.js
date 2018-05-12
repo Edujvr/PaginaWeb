@@ -1,3 +1,4 @@
+include('config.php');
 $(function () {
 
     window.initialMessageDisplayed = false;
