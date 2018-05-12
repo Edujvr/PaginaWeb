@@ -35,7 +35,7 @@ $(function () {
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
                 var eoc = responseObj.isEndOfConversation;
-
+                var event =responseObj.result.action;
                 var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
@@ -46,6 +46,16 @@ $(function () {
                     'class':"float-right",
                     tabindex:0
                 });
+                
+                if(event){
+                    var stylingDiv = jQuery('<div/>', {
+                        html: $("#template").html(),
+                        tabindex:1
+                    });
+                    if(event === 'show.customizer'){
+                        $(answerdiv).append(stylingDiv);
+                    }
+                }
 
                 $('#chat-text').append(answerRow);
                 $(answerRow).append(answerCol);
