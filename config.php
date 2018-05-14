@@ -1,5 +1,5 @@
 <?php
 return [
-    'CLIENT_ACCESS_TOKEN' => 'f8f7e7c56f3a48f6a70a8bf8e84dd43b'
+    'CLIENT_ACCESS_TOKEN' => '1e773aa5dcc74d4187f47dbe58bde45e'
  ];
 ?>
