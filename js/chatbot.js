@@ -36,8 +36,7 @@ $(function () {
             $(simpleResponseDiv).html(textFromDefaultResponse);
             $("#message").focus();
             window.initialMessageDisplayed = true;
-            
-            var textFromDefaultResponse = speech;
+
             if (textFromDefaultResponse.trim()!==''){
                 renderDefaultResponse(textFromDefaultResponse,answerContainerDiv);
             }
