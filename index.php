@@ -22,6 +22,11 @@
  
         ga('create', 'UA-109367761-1', 'auto');
         ga('send', 'pageview');
+        ga('send', 'event', {
+          'eventCategory': 'Intento',
+          'eventAction': 'Nombre Aux',
+          'eventLabel': 'Lo que dijo'
+        });
  
     </script>
 </head>
