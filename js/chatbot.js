@@ -38,9 +38,6 @@ $(function () {
             $("#message").focus();
             window.initialMessageDisplayed = true;
 
-            if (textFromDefaultResponse.trim()!==''){
-                renderDefaultResponse(textFromDefaultResponse,answerContainerDiv);
-            }
             renderRichControls(messages, answerContainerDiv);
             var isDisabled = $('#message').prop('disabled');
         }
