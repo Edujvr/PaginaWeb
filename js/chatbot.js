@@ -8,6 +8,7 @@ $(function () {
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
             var textFromDefaultResponse = obj.result.fulfillment.speech;
+            var messages = obj.result.fulfillment.mesagges
             var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
