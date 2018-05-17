@@ -7,8 +7,7 @@ ga('create', 'UA-109367761-1', 'auto');
 $(function () {
 
     window.initialMessageDisplayed = false;
-    
-    
+       
      $(document).mouseenter(function(){
         if(!window.initialMessageDisplayed){
             var obj = JSON.parse($("#dom-target").text());
@@ -69,16 +68,16 @@ $(function () {
                 var responseObj = JSON.parse(response);
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
-                var intentName = responseObj.intentName;
+                var intentName = responseObj.intentname;//nombre del intento
                 var eoc = responseObj.isEndOfConversation;
                 var event = responseObj.action;
-                
+                //Aqui envio la información a Google Analytics"
                 ga('send', 'event', {
                'eventCategory': 'Intento',
                'eventAction': intentName,
                'eventLabel': query
                               });
-
+                //Hasta aquí
                 var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
