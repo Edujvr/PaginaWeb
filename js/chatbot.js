@@ -2,9 +2,12 @@
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-XXXXX-Y', 'auto');
-ga('send', 'pageview');
+ga('create', 'UA-109367761-1', 'auto');
+ga('send', 'event', {
+          'eventCategory': 'Intento',
+          'eventAction': 'Nombre Aux',
+          'eventLabel': 'Lo que dijo'
+        });
 
 $(function () {
 
@@ -16,7 +19,8 @@ $(function () {
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
             var textFromDefaultResponse = obj.result.fulfillment.speech;
-            var messages = obj.result.fulfillment.messages;           
+            var messages = obj.result.fulfillment.messages;  
+            
             var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
