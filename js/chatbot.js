@@ -70,14 +70,13 @@ $(function () {
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
                 var intentName = responseObj.intentName;
-                var response = responseObj.query;
                 var eoc = responseObj.isEndOfConversation;
                 var event = responseObj.action;
                 
                 ga('send', 'event', {
                'eventCategory': 'Intento',
                'eventAction': intentName,
-               'eventLabel': response
+               'eventLabel': query
                               });
 
                 var answerRow = jQuery('<div/>',{
