@@ -3,11 +3,6 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-109367761-1', 'auto');
-ga('send', 'event', {
-   'eventCategory': 'Intento',
-   'eventAction': 'Primera Prueba',
-   'eventLabel': 'Segunda Prueba'
-                  }); 
 
 $(function () {
 
@@ -21,6 +16,12 @@ $(function () {
             var textFromDefaultResponse = obj.result.fulfillment.speech;
             var messages = obj.result.fulfillment.messages;       
             
+           ga('send', 'event', {
+               'eventCategory': 'Intento',
+               'eventAction': 'Tercera Prueba',
+               'eventLabel': 'Tercera Prueba'
+                              }); 
+           
             var answerRow = jQuery('<div/>',{
                     'class':'row'
                 });
