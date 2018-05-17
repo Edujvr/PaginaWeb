@@ -8,8 +8,7 @@ ga('send', 'pageview');
 ga('send', 'event', {
    'eventCategory': 'Intento',
    'eventAction': obj.result.metadata.intentName,
-   'eventLabel': obj.result.fulfillment.speech'
-  });
+   'eventLabel': obj.result.fulfillment.speech'});
 $(function () {
 
     window.initialMessageDisplayed = false;
