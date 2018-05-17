@@ -14,11 +14,12 @@ $(function () {
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
             var textFromDefaultResponse = obj.result.fulfillment.speech;
+            var intentName = obj.result.metadata.intentName;
             var messages = obj.result.fulfillment.messages;       
             
            ga('send', 'event', {
                'eventCategory': 'Intento',
-               'eventAction': 'Tercera Prueba',
+               'eventAction': intentName,
                'eventLabel': textFromDefaultResponse
                               }); 
            
