@@ -14,14 +14,7 @@ $(function () {
             var obj = JSON.parse($("#dom-target").text());
             var event = obj.result.action;
             var textFromDefaultResponse = obj.result.fulfillment.speech;
-            var intentName = obj.result.metadata.intentName;
-            var messages = obj.result.fulfillment.messages;       
-            
-           ga('send', 'event', {
-               'eventCategory': 'Intento',
-               'eventAction': intentName,
-               'eventLabel': textFromDefaultResponse
-                              }); 
+            var messages = obj.result.fulfillment.messages;                  
            
             var answerRow = jQuery('<div/>',{
                     'class':'row'
@@ -76,8 +69,16 @@ $(function () {
                 var responseObj = JSON.parse(response);
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
+                var intentName = responseObj.intentName;
+                var response = responseObj.query;
                 var eoc = responseObj.isEndOfConversation;
                 var event = responseObj.action;
+                
+                ga('send', 'event', {
+               'eventCategory': 'Intento',
+               'eventAction': intentName,
+               'eventLabel': response
+                              });
 
                 var answerRow = jQuery('<div/>',{
                     'class':'row'
