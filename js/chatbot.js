@@ -19,7 +19,7 @@ $(function () {
            ga('send', 'event', {
                'eventCategory': 'Intento',
                'eventAction': 'Tercera Prueba',
-               'eventLabel': 'Tercera Prueba'
+               'eventLabel': textFromDefaultResponse
                               }); 
            
             var answerRow = jQuery('<div/>',{
