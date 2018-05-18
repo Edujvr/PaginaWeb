@@ -68,7 +68,8 @@ $(function () {
                 var responseObj = JSON.parse(response);
                 var speech = responseObj.speech;
                 var messages = responseObj.messages;
-                var intentName = responseObj.intentname;//nombre del intento
+                var obj2 = JSON.parse($("#dom-target").text());
+                var intentName = obj2.result.metadata.intentName;//nombre del intento
                 var eoc = responseObj.isEndOfConversation;
                 var event = responseObj.action;
                 //Aqui envio la información a Google Analytics"
