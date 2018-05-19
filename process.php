@@ -34,6 +34,7 @@ try {
         $response -> speech = $transformed;
         $response -> messages = $messages;
         $response -> isEndOfConversation = $isEndOfConversation;
+        $response -> intentname = $intentname;
         echo json_encode($response);
         // close curl resource to free up system resources
         curl_close($ch);
