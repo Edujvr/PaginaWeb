@@ -6,6 +6,11 @@ ga('create', 'UA-109367761-1', 'auto');
 
 var ip = java.net.InetAddress.getLocalHost().getHostAddress ();
 
+
+$.getJSON('//freegeoip.net/json/?callback=?', function(data) {
+  console.log(data);
+});
+
 $(function () {
 
     window.initialMessageDisplayed = false;
