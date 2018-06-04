@@ -38,7 +38,8 @@
 
 .gaSuggestionChipButton{
     margin:3px;
-    background-color: #0f265c
+    background-color: #0f265c;
+    border:solid 1px #0f265c;
 }
 
 .gaListHeader{
