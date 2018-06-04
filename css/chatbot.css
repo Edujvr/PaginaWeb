@@ -179,7 +179,7 @@ hr {
     display: block;
     height: 3px;
     border: 0;
-    border-top: 1px solid red;
+    border-top: 1px solid #ffdd00;
     margin: 1em 0;
     padding: 0;
 }
