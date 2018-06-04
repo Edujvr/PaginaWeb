@@ -188,3 +188,7 @@ hr {
 .divEndMessage{
     margin:0 auto;
 }
+
+.btn-danger{
+    background-color:#ffdd00
+}
