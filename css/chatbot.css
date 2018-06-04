@@ -199,3 +199,9 @@ hr {
     border:solid 1px #ffdd00;
     color: #0f265c;
 }
+
+.btn-danger:hover{
+    background-color:#ffdd00;
+    border:solid 1px #ffdd00;
+    color: #0f265c;
+}
