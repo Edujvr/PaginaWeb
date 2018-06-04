@@ -80,8 +80,8 @@
     border-radius: 5px;
     margin: 10px;
     padding:15px;
-    border:solid 1px black;
-    background-color: lightgray;
+    border:solid 1px #ffdd00;
+    background-color: #f1f0ed;
     max-width:450px;
 }
 
