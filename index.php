@@ -14,6 +14,21 @@
             $("#lightSlider").lightSlider();
         });
     </script>
+    <script language="JavaScript1.2">
+        <!--
+
+        window.moveTo(0,0);
+        if (document.all) {
+        top.window.resizeTo(screen.availWidth,screen.availHeight);
+        }
+        else if (document.layers||document.getElementById) {
+        if (top.window.outerHeight<screen.availHeight||top.window.outerWidth<screen.availWidth){
+        top.window.outerHeight = screen.availHeight;
+        top.window.outerWidth = screen.availWidth;
+        }
+        }
+        //-->
+     </script>
 </head>
 <body class="fontStyle">
 <div class="topstrip" id="topstrip">Desarrollado por Tecnología <br/><img src="./img/icono.png" width=20 height=20 ><a href="http://pichinchanetbp:8080/" style="color:#d3d3d3">
