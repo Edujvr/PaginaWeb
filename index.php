@@ -30,6 +30,7 @@
     <input name="submit" type="hidden" value="Submit">
 </form>
 <?php
+echo 'Current PHP version: ' . phpversion();
 $sessionID = uniqid('', true);
 include('starter.php');
 ?>
