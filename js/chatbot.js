@@ -154,10 +154,6 @@ function renderRichControls(data, parent){
                 data[i]['platform']==='google'){
                 renderLinkOutSuggestion(data[i],parent);
             }
-            if(data[i]['type']==='simple_response' &&
-                data[i]['platform']==='google'){
-                renderSimpleResponse(data[i],parent);
-            }
             if(data[i]['type']==='basic_card' &&
                 data[i]['platform']==='google'){
                 renderBasicCard(data[i],parent);
