@@ -24,7 +24,7 @@
 </div>
 <form>
     <span style="width:100%;" id="inputSpan">
-        <input class="inputbox"
+        <input class="inputbox" autocomplete="off" 
                placeholder="Escribe algo y presiona Enter..." id="message" name="date" value="">
     </span>
     <input name="submit" type="hidden" value="Submit">
