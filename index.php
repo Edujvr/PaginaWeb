@@ -37,6 +37,10 @@ include('starter.php');
 <span style="display: none;" id="sessionId">
         <?php
         echo $sessionID;
+    
+    $domain = explode('@', 'ejtandazo@uce.edu.ec'); 
+        if (checkdnsrr($domain[1])) 
+        echo "Dominio de la dirección válida"; 
         ?>
 </span>
 
